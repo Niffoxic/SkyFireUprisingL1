@@ -347,7 +347,7 @@ def main() -> int:
                              "project files")
     args = parser.parse_args()
 
-    print(f"{C.BOLD}Unreal Engine 5.4 — C++ build environment fixer{C.RESET}")
+    print(f"{C.BOLD}Unreal Engine 5.4: C++ build environment fixer{C.RESET}")
 
     step(1, "checking ur on windows")
     if platform.system() != "Windows":
