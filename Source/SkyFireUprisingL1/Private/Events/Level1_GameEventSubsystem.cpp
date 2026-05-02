@@ -1,4 +1,4 @@
-#include "Level1_GameEventSubsystem.h"
+#include "Events/Level1_GameEventSubsystem.h"
 
 void ULevel1_GameEventSubsystem::BroadcastEvent(FGameplayTag EventTag, AActor* Instigator, UObject* Payload)
 {
@@ -27,6 +27,12 @@ bool ULevel1_GameEventSubsystem::RegisterListener(FGameplayTag EventTag, const F
     }
 
     FOnGameEventMulticast& Listeners = EventListeners.FindOrAdd(EventTag);
+
+    if (Listeners.Contains(Callback.GetUObject(), Callback.GetFunctionName()))
+    {
+        UE_LOG(LogTemp, Warning, TEXT("[GameEventSubsystem] Listener already registered for: %s"), *EventTag.ToString());
+        return false;
+	}
     Listeners.Add(Callback);
 
     UE_LOG(LogTemp, Verbose, TEXT("[GameEventSubsystem] Listener added for: %s"), *EventTag.ToString());

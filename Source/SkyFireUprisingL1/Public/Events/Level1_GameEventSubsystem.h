@@ -7,17 +7,17 @@
 // Called by listeners: std::function
 DECLARE_DYNAMIC_DELEGATE_ThreeParams(
     FOnGameEventDelegate,
-    FGameplayTag, EventTag,
-    AActor*, Instigator,
-    UObject*, Payload
+    FGameplayTag,   EventTag,
+    AActor*,        Instigator,
+    UObject*,       Payload
 );
 
 // Just a storage stuff: std::vector<std::function>>
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(
     FOnGameEventMulticast,
-    FGameplayTag, EventTag,
-    AActor*, Instigator,
-    UObject*, Payload
+    FGameplayTag,   EventTag,
+    AActor*,        Instigator,
+    UObject*,       Payload
 );
 
 /**
