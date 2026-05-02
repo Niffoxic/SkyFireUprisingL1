@@ -2,14 +2,11 @@
 #include "Events/Level1_GameEventSubsystem.h"
 #include "Level1_Tags.h"
 
-// Sets default values
 ALevel1_TestGameEvent::ALevel1_TestGameEvent()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
 
-// Called when the game starts or when spawned
 void ALevel1_TestGameEvent::BeginPlay()
 {
 	Super::BeginPlay();
@@ -74,7 +71,6 @@ void ALevel1_TestGameEvent::DoBroadcast()
 	}
 }
 
-// Called every frame
 void ALevel1_TestGameEvent::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
