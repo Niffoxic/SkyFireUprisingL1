@@ -24,6 +24,7 @@ public:
 
     UFUNCTION(BlueprintNativeEvent, Category = "Transition")
     void Cancel();
+
     virtual void Cancel_Implementation() { bFinished = true; }
 
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Transition")
