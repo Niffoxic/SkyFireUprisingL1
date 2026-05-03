@@ -8,7 +8,18 @@ public class SkyFireUprisingL1 : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
+		PublicDependencyModuleNames.AddRange(new string[] {
+			"Core",
+			"CoreUObject",
+			"Engine",
+			"InputCore",
+			"EnhancedInput",
+            "GameplayTags",
+			"UMG",
+			"MovieScene",
+			"LevelSequence",
+            "MovieSceneTracks"
+        });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
