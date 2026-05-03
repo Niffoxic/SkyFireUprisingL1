@@ -1,7 +1,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "TransitionTypes.generated.h"
+#include "Level1_TransitionTypes.generated.h"
 
 UENUM(BlueprintType)
 enum class ETransitionState : uint8
