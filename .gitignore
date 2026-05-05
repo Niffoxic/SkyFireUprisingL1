@@ -95,3 +95,4 @@ DerivedDataCache/*
 *.csv
 *.json
 Content/*
+Plugins/*
