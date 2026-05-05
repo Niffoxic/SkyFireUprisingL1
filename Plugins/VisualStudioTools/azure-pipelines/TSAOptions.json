@@ -1,21 +1,3 @@
-{
-    "tsaVersion": "TsaV2",
-    "codebase": "NewOrUpdate",
-    "codebaseName": "vc-ue-extensions",
-    "tsaStamp": "DevDiv",
-    "tsaEnvironment": "PROD",
-    "notificationAliases": [
-       "hebaggio@microsoft.com",
-       "cpp-apogee@microsoft.com"
-    ],
-    "codebaseAdmins": [
-        "REDMOND\\hebaggio",
-        "REDMOND\\cpp-apogee"
-    ],
-    "instanceUrl": "https://devdiv.visualstudio.com",
-    "projectName": "DevDiv",
-    "areaPath": "DevDiv\\Cpp Developer Experience\\GameDev Experience\\Unreal Engine integrations",
-    "iterationPath": "DevDiv",
-    "alltools": true,
-    "repositoryName": "vc-ue-extensions"
- }
+version https://git-lfs.github.com/spec/v1
+oid sha256:2342620191989508f0502a2712e74d18d7bfaee10e45e6db9230cb0f8cbd3c87
+size 628
