@@ -381,7 +381,6 @@ void ULevel1_LevelStreamManager::EnterState_EffectsAfterSwap()
     }
 }
 
-
 void ULevel1_LevelStreamManager::EnterState_Done()
 {
     CurrentState = ETransitionState::Done;

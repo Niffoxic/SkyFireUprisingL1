@@ -16,6 +16,12 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(
     FOnTransitionComplete,
     ULevel1_DataAssetTransitionConfig*, Config);
 
+/**
+*   Streams Level from One map to another with optional transition effects and events.
+*   Designed to be used with a single active transition at a time,
+*   but can be extended to support multiple simultaneous transitions if needed
+*/
+
 UCLASS()
 class SKYFIREUPRISINGL1_API ULevel1_LevelStreamManager : public UWorldSubsystem, public FTickableGameObject
 {
